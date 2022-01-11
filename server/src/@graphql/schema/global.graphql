@@ -1,0 +1,27 @@
+
+
+
+
+
+
+scalar PhoneNumber
+scalar ShortString
+
+
+scalar Date
+
+
+type Status {
+  msg: String!
+  status: Int!
+}
+
+
+type Token {
+  token: String!
+}
+
+
+type Query {
+  doSomeMagic: String!
+}

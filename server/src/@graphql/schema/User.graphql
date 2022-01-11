@@ -1,0 +1,21 @@
+
+
+
+
+type User {
+  _id: ID!
+  name: String!
+  PhoneNumber: PhoneNumber!
+  avatar: String!
+}
+
+
+type Query {
+  me: User!
+}
+
+
+type Mutation {
+  login_signup_attemp(PhoneNumber: PhoneNumber!): Status!
+  login_singup_final(PhoneNumber: PhoneNumber!, code: String!): Token!
+}
